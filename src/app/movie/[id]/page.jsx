@@ -5,7 +5,6 @@ export default async function MoviePage({ params }) {
     `http://api.themoviedb.org/3/movie/${params.id}?api_key=${process.env.API_KEY}`
   );
   const movie = await res.json();
-  console.log(movie);
 
   return (
     <div className="w-full">
