@@ -1,5 +1,4 @@
 import Results from "@/components/Results";
-import { Suspense } from "react";
 
 const API_KEY = process.env.API_KEY;
 
@@ -19,9 +18,7 @@ export default async function Home({ searchParams }) {
 
   return (
     <div>
-      <Suspense>
-        <Results results={results} />
-      </Suspense>
+      <Results results={results} />
     </div>
   );
 }
